@@ -3,7 +3,7 @@ import math
 def sigmoid(z: float) -> float:
     return 1.0 / (1.0 + math.exp(-z))
 
-def neuron_forward(x, w, b):
+def forward(x, w, b):
     """
     x: list of floats, length n - input
     w: list of floats, length n - weights
@@ -20,5 +20,5 @@ def neuron_forward(x, w, b):
     print("activation function ", a) # converts a real number (z) into a 1 or 0
     return z, a
 
-def mse_loss(y, a):
+def mse(y, a):
     return (y - a) ** 2

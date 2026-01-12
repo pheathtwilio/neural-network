@@ -1,4 +1,4 @@
-from lib import neuron_forward, mse_loss
+from lib import forward, mse
 
 """
 Simple first pass Nueron Example
@@ -13,8 +13,8 @@ y is typically the target, so loss is calculated from y and a to determine how f
 """
 def first_pass(x, w, b, y):
 
-    z, a = neuron_forward(x, w, b)
-    loss = mse_loss(y, a)
+    z, a = forward(x, w, b)
+    loss = mse(y, a)
 
     print("z =", z)
     print("a = sigmoid(z) =", a)
