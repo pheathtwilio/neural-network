@@ -9,7 +9,7 @@ def forward(x, w, b):
     x: list of floats, length n - input
     w: list of floats, length n - weights
     b: float - bias
-    returns: (z, a)
+    returns: (z, a) computed weight and activation function
     """
     z = 0.0
 
